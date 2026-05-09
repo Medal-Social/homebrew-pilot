@@ -6,14 +6,14 @@ class Pilot < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Medal-Social/Pilot/releases/latest/download/pilot-darwin-arm64"
-      sha256 "d918698fd0ddec617a1e13e3bdd7d1ad9da2f6c6be4c645bbbae0fbe84d98c7d" # darwin-arm64
+      sha256 "a5fb8240bcb8e431dd4e348ddc08c697e79d390933efd3140817e2c0314bccab" # darwin-arm64
 
       def install
         bin.install "pilot-darwin-arm64" => "pilot"
       end
     else
       url "https://github.com/Medal-Social/Pilot/releases/latest/download/pilot-darwin-x64"
-      sha256 "a8336f1340c0c3e57aabbc9c4188d5d33a4b33072c14aecf14e50d1f19edf860" # darwin-x64
+      sha256 "5a45e36e392ae78983a068be1ef4932cc9568a9d429efd6b758e4a61fc160400" # darwin-x64
 
       def install
         bin.install "pilot-darwin-x64" => "pilot"
@@ -24,14 +24,14 @@ class Pilot < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Medal-Social/Pilot/releases/latest/download/pilot-linux-arm64"
-      sha256 "af9413ce94d5a61a882d18a7691d23f67dfe3290ec21b0e8ce3b135642fd98ff" # linux-arm64
+      sha256 "4bc0624a7b484d905b8559c3030788ad646a102117b0bd04628e0b2dead6fc71" # linux-arm64
 
       def install
         bin.install "pilot-linux-arm64" => "pilot"
       end
     else
       url "https://github.com/Medal-Social/Pilot/releases/latest/download/pilot-linux-x64"
-      sha256 "67ff47d08a220a4146ce2fd64add5253d8b5c35c1b4bee5283d8a1d974cf3b82" # linux-x64
+      sha256 "d127ba2bd50cd394e5c7d6137cff1c7ba7db9597abfb32db2546e10f9d698c1a" # linux-x64
 
       def install
         bin.install "pilot-linux-x64" => "pilot"

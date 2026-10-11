@@ -2,19 +2,19 @@ class Pilot < Formula
   desc "Your AI crew, ready to fly. Medal Social's AI-powered CLI platform."
   homepage "https://github.com/Medal-Social/Pilot"
   license "Apache-2.0"
-  version "0.7.2"
+  version "0.7.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.2/pilot-darwin-arm64"
-      sha256 "4a00bb06a577eb3697156472d819c3c83d8e6e011dd5f9889483a88dc654b64e" # darwin-arm64
+      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.3/pilot-darwin-arm64"
+      sha256 "48a264f4bc727ca528463815eb87da001bf194c099be7ce8eb27f359aa7f2b26" # darwin-arm64
 
       def install
         bin.install "pilot-darwin-arm64" => "pilot"
       end
     else
-      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.2/pilot-darwin-x64"
-      sha256 "1b8a9fe172a3edde41db89560b3cbdb67eb9ec9fa94e1b100657dc0d5915bdc8" # darwin-x64
+      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.3/pilot-darwin-x64"
+      sha256 "9a926889a8883c7b3f09e6f62e398f87d11fc094fc173ab98b6bce8625ea6f8e" # darwin-x64
 
       def install
         bin.install "pilot-darwin-x64" => "pilot"
@@ -24,15 +24,15 @@ class Pilot < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.2/pilot-linux-arm64"
-      sha256 "ce9563068488d2b216d10b5e9a41bbf94c230c07163c0d9dc8e5601dfb8a66d2" # linux-arm64
+      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.3/pilot-linux-arm64"
+      sha256 "df79e30b377e65c87692d634871c5e2a18d9783a48e918d33eb030d4b24b955d" # linux-arm64
 
       def install
         bin.install "pilot-linux-arm64" => "pilot"
       end
     else
-      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.2/pilot-linux-x64"
-      sha256 "01c9da5798f618448a44e00cb11d91a36882cb49927455dd268a0c65e4b9f8a8" # linux-x64
+      url "https://github.com/Medal-Social/Pilot/releases/download/%40medalsocial/pilot%400.7.3/pilot-linux-x64"
+      sha256 "919d066655f57c8c0b249fddec08cf15c3e324741eb56653201374cf6db9b22d" # linux-x64
 
       def install
         bin.install "pilot-linux-x64" => "pilot"
